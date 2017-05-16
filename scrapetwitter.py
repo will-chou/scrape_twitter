@@ -1,7 +1,9 @@
-import tweepy
+#Make sure '$ mongod' is running in the background
+
+import tweepy	#Python library for accessing Twitter API
 from random import randint
-from pymongo import MongoClient
-from twilio.rest import Client
+from pymongo import MongoClient	#pymongo contains tools to work with MongoDB
+from twilio.rest import Client	#Twilio Python helper library
 
 #function that searches for tweets matching query string and stores them into a list of SearchResult objects
 def searchTweets():
